@@ -1,0 +1,10 @@
+[meta]
+name = "Dossard"
+author = "Blackfeather"
+category = "Overlay"
+
+siteid = 166
+version = "1.0.0"
+
+[script]
+imports = [ "Icons.as" ]
