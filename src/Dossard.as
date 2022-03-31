@@ -14,7 +14,7 @@ class Dossard
     auto isOnline = app.PlaygroundScript is null;
     auto playground = cast<CSmArenaClient>(app.CurrentPlayground);
 
-    gui.guiHidden = playground is null || playground.Interface is null || Dev::GetOffsetUint32(playground.Interface, 0x1C) == 0;
+    gui.guiHidden = playground is null || playground.Interface is null || !UI::IsGameUIVisible();
     gui.visible = false;
 
     if (playground is null || playground.Arena is null || playground.Map is null || playground.GameTerminals.Length <= 0)
