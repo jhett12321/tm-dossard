@@ -33,7 +33,8 @@ class Dossard
       return;
     }
 
-    gui.UpdateData(player.ScriptAPI.Dossard, player.ScriptAPI.Dossard_Color);
+    auto scriptPlayer = cast<CSmScriptPlayer>(player.ScriptAPI);
+    gui.UpdateData(scriptPlayer.Dossard, scriptPlayer.Dossard_Color);
     gui.visible = true;
   }
 
